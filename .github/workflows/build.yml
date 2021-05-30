@@ -59,7 +59,10 @@ jobs:
 
       - name: kubernetes deployment configuration
         run: kubectl apply -f kube-deployment/main.yml
-
+        
+      - name: kubernetes get status
+        run: sleep 50
+        
       - name: kubernetes get status
         run: kubectl get po,svc
 
