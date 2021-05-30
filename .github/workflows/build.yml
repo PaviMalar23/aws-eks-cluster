@@ -10,7 +10,7 @@ jobs:
     name: app deployment
     runs-on: ubuntu-latest
     env:
-      CN: demo-dev # cluster name
+      CN: demos-test # cluster name
     steps:
       - name: checkout
         uses: actions/checkout@v1
