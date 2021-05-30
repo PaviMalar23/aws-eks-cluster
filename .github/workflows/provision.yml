@@ -30,8 +30,8 @@ jobs:
       - name: terraform initial
         run: |
           terraform init \
-            -backend-config="bucket=${{ env.bucket }}" \
-            -backend-config="key=${{ github.event.inputs.name }}/tfstate.tfstate" \
+            -backend-config="bucket=backend-bucket-name-terraform" \
+            -backend-config="key=dev/tfstate.tfstate" \
             -backend-config="region=eu-central-1" \
             -backend=true
 
